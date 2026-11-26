@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light;
+  --paper: #f7f8f5;
+  --navy: #203b56;
+  --teal: #146c65;
+  --tint: #e8f0eb;
+  --muted: #465967;
+  --line: #ccd8d2;
+  --font: Inter, "Noto Sans JP", "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--navy);
+  font: 1rem/1.6 var(--font);
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+.catalog {
+  width: min(100% - 3rem, 69rem);
+  margin-inline: auto;
+  padding-block: clamp(3rem, 9vw, 7.5rem);
+}
+.intro { border-top: 4px solid var(--teal); padding-top: 1.8rem; margin-bottom: clamp(2.6rem, 6vw, 4.8rem); }
+.intro .organizer { margin: 0 0 .7rem; color: var(--teal); font-weight: 750; letter-spacing: .07em; }
+h1 { margin: 0 0 .8rem; line-height: 1.14; letter-spacing: -.045em; font-size: clamp(2.3rem, 7vw, 5.1rem); }
+h2 { font-size: 1.28rem; margin: 0 0 .8rem; }
+h3 { font-size: clamp(1.06rem, 2.4vw, 1.42rem); line-height: 1.45; margin: 0; }
+p { margin: .28rem 0 0; color: var(--muted); }
+.sessions { margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.session {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  min-height: 6rem;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.session-number { color: var(--teal); font-size: .87rem; font-weight: 750; }
+.availability { justify-self: end; color: var(--muted); font-size: .88rem; }
+.session-link {
+  display: inline-flex;
+  gap: .55rem;
+  align-items: center;
+  min-height: 44px;
+  padding: .55rem .85rem;
+  border-radius: .45rem;
+  background: var(--navy);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 700;
+}
+.session-link:hover { background: var(--teal); }
+.session-link:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+@media (max-width: 42rem) {
+  .session { grid-template-columns: 3.1rem minmax(0, 1fr); gap: .35rem .55rem; }
+  .session-number { align-self: start; margin-top: .23rem; }
+  .session-link, .availability { grid-column: 2; justify-self: start; }
+  .session-link { margin-top: .4rem; }
+}
