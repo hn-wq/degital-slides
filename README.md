@@ -25,9 +25,11 @@ HTTPでも確認したいときは、Pythonが利用できる環境で、リポ�
 ## GitHub Pagesで公開する
 
 1. ZIPを展開し、`index.html`、`.nojekyll`、`session-01/` などをリポジトリのルートに置きます。展開先のフォルダをもう一段入れ子にせず、先頭の `index.html` がリポジトリのルートにあることを確認します。OSの設定によっては `.nojekyll` が隠れて表示されます。
-2. 公開する内容を `main` にコミットしてプッシュします。公開リポジトリ内のファイルは閲覧できるため、発表者ノートなど公開を意図しない資料は手元で管理します。
+2. 確認用ブランチで変更し、`main` を対象にプルリクエストを作成します。レビュー後にマージした内容が公開対象になります。公開リポジトリ内のファイルは閲覧できるため、発表者ノートなど公開を意図しない資料は手元で管理します。
 3. リポジトリの `Settings` → `Pages` で、`Source` に `Deploy from a branch`、ブランチに `main`、フォルダに `/(root)` を選んで保存します。
 4. デプロイ後、Pages画面に出る公開URLを開きます。公開URLの末尾に `session-01/#slide-11` を付けると、第1回の11枚目を直接開けます。
+
+第1回の旧共有URL（一覧のURLに `#slide-1`〜`#slide-15` を付けたもの）は、JavaScriptが有効なブラウザでは移動先の同じスライドを開きます。
 
 [GitHub Pagesの公開元設定](https://docs.github.com/ja/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
