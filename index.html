@@ -1,43 +1,284 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Local Bridge デジタル勉強会のスライド一覧。">
-  <title>デジタル勉強会｜Local Bridge</title>
-  <link rel="stylesheet" href="./styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Local Bridge デジタル勉強会 第1回。大学生のための生成AI入門。">
+<title>ChatGPT・Gemini・Claude、結局どれを使えばいい？｜Local Bridge</title>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="catalog">
-    <header class="intro">
-      <p class="organizer" lang="en">Local Bridge</p>
-      <h1>デジタル勉強会</h1>
-      <p>大学生向けの生成AI勉強会。各回のスライドをここから開けます。</p>
-    </header>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1v14"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="m4 20 1-5L16 4a2 2 0 0 1 3 3L8 18l-4 2Z"/><path d="m14 6 4 4M13 20h7"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-4m5 4V8m5 8V5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4zM8 9h8m-8 3h5"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 3-8 11h6l-1 7 9-11h-6z"/></symbol>
+  <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18m-14 4 2 2-2 2m6 0h4"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.3"/><circle cx="5" cy="17" r="2.3"/><circle cx="19" cy="17" r="2.3"/><path d="m10.8 7-4.6 8.1m7-8.1 4.6 8.1M7.3 17h9.4"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 18V7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h17m-7-7 7 7-7 7"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M6 6h14M6 12h14M6 18h14M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+  <symbol id="i-read" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6m-6 4h6m-6 4h4"/></symbol>
+  <symbol id="i-fit" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="m9 6-6 6m18 0-6 6"/></symbol>
+  <symbol id="i-full" viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></symbol>
+  <symbol id="i-exit-full" viewBox="0 0 24 24"><path d="M4 9h5V4m6 0v5h5M9 20v-5H4m11 5v-5h5"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+</svg>
+<noscript><p>スライドの操作にはJavaScriptを有効にしてください。印刷すると全ページを確認できます。</p></noscript>
+<div class="deck-shell">
+  <main class="viewer" aria-label="デジタル勉強会のスライド">
+    <div class="stage">
+<section class="slide cover" id="slide-1" aria-labelledby="title-1">
+  <div class="cover-copy">
+    <p class="kicker">Local Bridge <span class="soft-divider"></span> デジタル勉強会 第1回</p>
+    <h1 id="title-1"><span lang="en">ChatGPT・Gemini・Claude</span><br>結局、どれを<br>使えばいい？</h1>
+    <p class="cover-sub">大学生のための生成AI入門</p>
+  </div>
+  <svg class="hero-art" viewBox="0 0 600 590" role="img" aria-label="3つのAIの選択肢が、やりたいことを起点に広がる図">
+    <title>やりたいことから広がるAIの選択肢</title>
+    <defs>
+      <pattern id="cover-dots" width="21" height="21" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.35" fill="#aebfbb"/></pattern>
+      <marker id="cover-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7Z" fill="#16766e"/></marker>
+    </defs>
+    <rect x="44" y="48" width="530" height="510" rx="34" fill="#e7eeea"/>
+    <rect x="61" y="65" width="496" height="476" rx="28" fill="url(#cover-dots)"/>
+    <circle cx="276" cy="298" r="163" fill="#edf3ef" stroke="#cadbd4"/>
+    <circle cx="276" cy="298" r="118" fill="none" stroke="#cadbd4"/>
+    <path d="M165 298H259Q301 298 301 248V166Q301 133 333 133H468" fill="none" stroke="#16766e" stroke-width="4" marker-end="url(#cover-arrow)"/>
+    <path d="M165 298H499" fill="none" stroke="#16766e" stroke-width="4" marker-end="url(#cover-arrow)"/>
+    <path d="M165 298H259Q301 298 301 350V431Q301 464 333 464H468" fill="none" stroke="#16766e" stroke-width="4" marker-end="url(#cover-arrow)"/>
+    <circle cx="165" cy="298" r="73" fill="#203b56"/>
+    <circle cx="165" cy="298" r="62" fill="none" stroke="#537185"/>
+    <text x="165" y="307" text-anchor="middle" fill="#fbfcf8" font-size="21" font-weight="700">やりたいこと</text>
+    <circle cx="301" cy="298" r="10" fill="#e7eeea" stroke="#16766e" stroke-width="4"/>
+    <g fill="#fafbf7" stroke="#a8c1b6" stroke-width="1.5">
+      <rect x="351" y="99" width="187" height="65" rx="14"/>
+      <rect x="379" y="266" width="177" height="65" rx="14"/>
+      <rect x="351" y="431" width="187" height="65" rx="14"/>
+    </g>
+    <g fill="#203b56" font-size="23" font-weight="750" text-anchor="middle">
+      <text x="444" y="141">ChatGPT</text><text x="467" y="308">Gemini</text><text x="444" y="473">Claude</text>
+    </g>
+  </svg>
+</section>
 
-    <section aria-labelledby="slides-heading">
-      <h2 id="slides-heading">スライド一覧</h2>
-      <ol class="sessions">
-        <li class="session">
-          <span class="session-number">第1回</span>
-          <div>
-            <h3>ChatGPT・Gemini・Claude、結局どれを使えばいい？</h3>
-            <p>生成AIの特徴と選び方・前半30分</p>
-          </div>
-          <a class="session-link" href="./session-01/index.html">第1回のスライドを開く <span aria-hidden="true">→</span></a>
-        </li>
-        <li class="session">
-          <span class="session-number">第2回</span>
-          <h3>大学生のためのAI活用・リテラシー</h3>
-          <span class="availability">公開予定</span>
-        </li>
-        <li class="session">
-          <span class="session-number">第3回</span>
-          <h3>AIを活用した壁打ち・企画書作成</h3>
-          <span class="availability">公開予定</span>
-        </li>
-      </ol>
-    </section>
+<section class="slide" id="slide-2" hidden aria-labelledby="title-2" data-section="AIでできること">
+  <header class="slide-head"><p class="kicker">チャットで参加</p><h2 id="title-2">AIを何に使っていますか？</h2></header>
+  <div class="poll-layout">
+    <div class="prompt-aside"><p class="big-message">当てはまるものを<br>チャット欄へ。</p><p>番号だけでOK。複数回答も歓迎です。</p><p class="chat-example"><span>入力例</span> 01・03</p></div>
+    <ol class="poll-options">
+      <li><span>01</span>分からないことを調べる</li><li><span>02</span>レポートや文章を書く</li>
+      <li><span>03</span>翻訳・要約する</li><li><span>04</span>アイデアを考える</li>
+      <li><span>05</span>悩みや将来について相談する</li><li><span>06</span>ほとんど使っていない</li>
+    </ol>
+  </div>
+</section>
+
+<section class="slide" id="slide-3" hidden aria-labelledby="title-3" data-section="AIでできること">
+  <header class="slide-head"><p class="kicker">大学生活での使い方</p><h2 id="title-3"><span class="phrase">AIでできることは、</span><wbr><span class="phrase">検索から企画まで</span></h2></header>
+  <div class="use-map">
+    <div class="use-item"><svg aria-hidden="true"><use href="#i-search"/></svg><div><h3>情報収集</h3><p>学会や奨学金を調べ、募集元のページを開く</p></div></div>
+    <div class="use-item"><svg aria-hidden="true"><use href="#i-book"/></svg><div><h3>学習・理解</h3><p>授業でつまずいた概念を身近な例で理解する</p></div></div>
+    <div class="use-item"><svg aria-hidden="true"><use href="#i-pen"/></svg><div><h3>制作</h3><p>サークルの告知文・ポスター・発表資料のたたき台を作る</p></div></div>
+    <div class="use-item"><svg aria-hidden="true"><use href="#i-chart"/></svg><div><h3>データ分析</h3><p>匿名アンケートを集計し、グラフの見せ方を考える</p></div></div>
+    <div class="use-item"><svg aria-hidden="true"><use href="#i-chat"/></svg><div><h3>思考整理・壁打ち</h3><p>イベント企画の抜けや前提を質問してもらう</p></div></div>
+    <div class="use-item"><svg aria-hidden="true"><use href="#i-bolt"/></svg><div><h3>作業の自動化</h3><p>繰り返す集計を、表計算の関数やコードでまとめる</p></div></div>
+  </div>
+  <p class="slide-note">出典や数値、授業で認められるAIの使い方は自分で確認。</p>
+</section>
+
+<section class="slide" id="slide-4" hidden aria-labelledby="title-4" data-section="AIでできること">
+  <header class="slide-head"><p class="kicker">AIとの関わり方</p><h2 id="title-4"><span class="phrase">「調べる」から</span><wbr><span class="phrase">「一緒に考える」へ</span></h2></header>
+  <ol class="steps">
+    <li><span class="step-n">01</span><h3>調べる</h3><p>「屋内で使える<br>会場を探したい」</p></li>
+    <li><span class="step-n">02</span><h3>作業を任せる</h3><p>「告知文の下書きを<br>作って」</p></li>
+    <li><span class="step-n">03</span><h3>一緒に考える</h3><p>「初参加の人が<br>迷う点を教えて」</p></li>
+    <li><span class="step-n">04</span><h3>相談を続ける</h3><p>「前回の反省から<br>次の改善点を考えたい」</p></li>
+  </ol>
+  <p class="slide-note">この4つはイベント運営を例にした講義用の整理。場面に合わせて使い分けます。</p>
+</section>
+
+<section class="slide" id="slide-5" hidden aria-labelledby="title-5" data-section="3サービスの違い">
+  <header class="slide-head"><p class="kicker">サービスの違いが生まれる理由</p><h2 id="title-5"><span class="phrase">AIサービスは、</span><wbr><span class="phrase">モデルと機能の組み合わせ</span></h2></header>
+  <div class="service-diagram" aria-label="AIサービスという製品は、モデルと周辺機能を備えている">
+    <div class="diagram-top"><svg aria-hidden="true"><use href="#i-screen"/></svg><div><h3>AIサービス</h3><p>私たちが操作するアプリ・製品</p></div></div>
+    <div class="diagram-inner">
+      <div class="model-box"><svg aria-hidden="true"><use href="#i-network"/></svg><h3>AIモデル</h3><p>推論や文章生成を担う、<br>いわば「頭脳」</p></div>
+      <span class="plus-sign" aria-hidden="true">＋</span>
+      <div class="tools-box"><h3>周辺機能</h3><ul><li>Web検索</li><li>画像生成</li><li>ファイル処理</li><li>メモリ</li><li>外部連携</li></ul></div>
+    </div>
+  </div>
+  <p class="slide-note">同じサービスの中でも、選んだモデルや使える機能で体験は変わります。</p>
+</section>
+
+<section class="slide" id="slide-6" hidden aria-labelledby="title-6" data-section="3サービスの違い">
+  <header class="slide-head"><p class="kicker">主要な生成AIサービス</p><h2 id="title-6">3つのAI、それぞれの入口</h2></header>
+  <div class="three-services">
+    <div class="service-entry"><p class="maker">OpenAI</p><h3 lang="en">ChatGPT</h3><p class="position">会話を起点に<br>幅広い作業へ</p><p>相談から検索、ファイル分析、画像制作へ進める。</p></div>
+    <div class="service-entry"><p class="maker">Google</p><h3 lang="en">Gemini</h3><p class="position">Googleの環境で<br>資料を活用</p><p>Google DriveやGmailなど、日頃の作業環境とつなげられる。</p></div>
+    <div class="service-entry"><p class="maker">Anthropic</p><h3 lang="en">Claude</h3><p class="position">資料を読み、<br>文章や試作にする</p><p>PDFの整理や推敲、Artifactsでの成果物づくりに使える。</p></div>
+  </div>
+  <p class="slide-note">各社の機能には重なりがあります。<a href="https://chatgpt.com/pricing/">OpenAI</a> ／ <a href="https://gemini.google/jp/subscriptions/?hl=ja">Google</a> ／ <a href="https://claude.com/pricing">Anthropic</a> · 2026年11月26日確認</p>
+</section>
+
+<section class="slide service-detail chatgpt" id="slide-7" hidden aria-labelledby="title-7" data-section="3サービスの違い">
+  <header class="slide-head"><p class="kicker">ChatGPT <span class="soft-divider"></span> OpenAI</p><h2 id="title-7"><span class="phrase">相談から分析・制作まで、</span><wbr><span class="phrase">会話を起点に進める</span></h2></header>
+  <div class="example-layout">
+    <div class="example-lead"><p class="example-tag">学生団体の例</p><h3>イベントの振り返りを<br>次回の改善につなげる</h3><p>匿名のアンケート結果をもとに、次回どこを変えるか考える。</p></div>
+    <ol class="example-flow">
+      <li><svg aria-hidden="true"><use href="#i-chat"/></svg><div><h3>相談する</h3><p>「満足度より、初参加の人が迷った点を知りたい」</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-chart"/></svg><div><h3>ファイルを分析する</h3><p>回答を分類し、傾向をグラフにする</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-pen"/></svg><div><h3>次回の案を作る</h3><p>受付の案内や、事前連絡の文面を練る</p></div></li>
+    </ol>
+  </div>
+  <p class="slide-note">Web検索・画像生成・メモリなども利用できます。利用範囲はプランや設定によって異なります。<a href="https://chatgpt.com/pricing/">OpenAI公式</a></p>
+</section>
+
+<section class="slide service-detail gemini" id="slide-8" hidden aria-labelledby="title-8" data-section="3サービスの違い">
+  <header class="slide-head"><p class="kicker">Gemini <span class="soft-divider"></span> Google</p><h2 id="title-8"><span class="phrase">Googleにある資料を、</span><wbr><span class="phrase">そのまま作業に生かす</span></h2></header>
+  <div class="example-layout">
+    <div class="example-lead"><p class="example-tag">グループ発表の例</p><h3>Driveの過去資料から<br>準備することを整理する</h3><p>権限のある資料を参照して、準備に必要な作業を洗い出す。</p></div>
+    <ol class="example-flow">
+      <li><svg aria-hidden="true"><use href="#i-folder"/></svg><div><h3>資料を探す</h3><p>Driveから前回の発表資料・議事録を確認する</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-book"/></svg><div><h3>要点を整理する</h3><p>決まったことと未決定のことを分ける</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>原文を確かめる</h3><p>期限・固有名詞は元の資料を開いて確認する</p></div></li>
+    </ol>
+  </div>
+  <p class="slide-note">Google Workspaceとの連携は設定に依存します。大学アカウントでは管理者の許可が必要な場合があります。<a href="https://support.google.com/gemini/answer/14959807?hl=ja">Google公式</a></p>
+</section>
+
+<section class="slide service-detail claude" id="slide-9" hidden aria-labelledby="title-9" data-section="3サービスの違い">
+  <header class="slide-head"><p class="kicker">Claude <span class="soft-divider"></span> Anthropic</p><h2 id="title-9"><span class="phrase">長文を読み解き、</span><wbr><span class="phrase">伝わる文章や試作にする</span></h2></header>
+  <div class="example-layout">
+    <div class="example-lead"><p class="example-tag">ゼミの例</p><h3>長い資料から<br>議論のたたき台を作る</h3><p>公開資料を読み込み、議論したい点を自分の言葉に落とす。</p></div>
+    <ol class="example-flow">
+      <li><svg aria-hidden="true"><use href="#i-book"/></svg><div><h3>資料を整理する</h3><p>PDFから主張・根拠・論点を分ける</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-pen"/></svg><div><h3>文章を推敲する</h3><p>自分の要約に対し、伝わりにくい点を聞く</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-screen"/></svg><div><h3>Artifactsで形にする</h3><p>チャット横の作業欄で文書やミニサイトを試作する</p></div></li>
+    </ol>
+  </div>
+  <p class="slide-note">Artifactsは、作った文書・コード・図などを会話と別の欄で扱える機能です。<a href="https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them">Anthropic公式</a></p>
+</section>
+
+<section class="slide comparison" id="slide-10" hidden aria-labelledby="title-10" data-section="3サービスの違い">
+  <header class="slide-head"><p class="kicker">機能と利用環境の比較</p><h2 id="title-10"><span class="phrase">共通点が多いからこそ、</span><wbr><span class="phrase">使い方で比べる</span></h2></header>
+  <p class="table-intro">会話・文章作成・Web検索・ファイル活用は、3つとも試せます。</p>
+  <table class="compare-table">
+    <thead><tr><th scope="col">観点</th><th scope="col">ChatGPT</th><th scope="col">Gemini</th><th scope="col">Claude</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">思考・推論</th><td>対話で案を広げ、絞る</td><td>資料を参照して考える</td><td>長文から論点を整理する</td></tr>
+      <tr><th scope="row">情報収集</th><td>Web検索・引用元</td><td>Web情報・接続した資料</td><td>Web検索・引用元</td></tr>
+      <tr><th scope="row">文章・資料制作</th><td>文書・画像・データ分析</td><td>Canvasで編集・試作</td><td>Artifactsで編集・試作</td></tr>
+      <tr><th scope="row">外部との連携</th><td>ChatGPTのアプリ連携</td><td>Google Workspace連携</td><td>Claudeのアプリ・ツール連携</td></tr>
+      <tr><th scope="row">継続利用</th><td>メモリ・会話履歴の参照</td><td>過去チャットの参照</td><td>会話をまたぐメモリ</td></tr>
+      <tr><th scope="row">料金・制限</th><td>無料あり／ツールに制限</td><td>無料あり／上限は機能別</td><td>無料あり／数時間・週単位の上限</td></tr>
+    </tbody>
+  </table>
+  <p class="slide-note">機能・使い方の例です。使える範囲はアカウント・プラン・設定・地域などで変わります。確認日 2026年11月26日</p>
+</section>
+
+<section class="slide" id="slide-11" hidden aria-labelledby="title-11" data-section="AIの選び方">
+  <header class="slide-head"><p class="kicker">用途で選ぶ</p><h2 id="title-11"><span class="phrase">やりたいことから、</span><wbr><span class="phrase">使うAIを選ぶ</span></h2></header>
+  <div class="scenario-workbench">
+    <div class="scenario-tabs" role="tablist" aria-label="試したい場面" aria-orientation="vertical">
+      <button type="button" role="tab" aria-selected="true" aria-controls="scenario-class" id="tab-class"><svg aria-hidden="true"><use href="#i-book"/></svg>授業の理解</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="scenario-report" id="tab-report" tabindex="-1"><svg aria-hidden="true"><use href="#i-pen"/></svg>レポートの構成</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="scenario-career" id="tab-career" tabindex="-1"><svg aria-hidden="true"><use href="#i-chat"/></svg>就活の自己分析</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="scenario-drive" id="tab-drive" tabindex="-1"><svg aria-hidden="true"><use href="#i-folder"/></svg>Driveの資料整理</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="scenario-event" id="tab-event" tabindex="-1"><svg aria-hidden="true"><use href="#i-check"/></svg>イベント企画</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="scenario-web" id="tab-web" tabindex="-1"><svg aria-hidden="true"><use href="#i-screen"/></svg>サイト・アプリ制作</button>
+    </div>
+    <div class="scenario-content">
+      <div id="scenario-class" class="scenario" role="tabpanel" tabindex="0" aria-labelledby="tab-class"><p class="print-label">授業の理解</p><h3>説明が、自分の理解度に合うか</h3><p class="scenario-example">同じ用語を3つのAIのどれかに聞き、身近な例と確認問題を出してもらう。</p><p class="scenario-check">判断の目安　答えを閉じて、自分の言葉で説明できる</p></div>
+      <div id="scenario-report" class="scenario" role="tabpanel" tabindex="0" aria-labelledby="tab-report" hidden><p class="print-label">レポートの構成</p><h3>根拠と自分の主張がつながるか</h3><p class="scenario-example">自分の主張と資料を示し、構成案や論理の飛躍を挙げてもらう。</p><p class="scenario-check">判断の目安　引用を原典で確かめ、授業のルールに沿える</p></div>
+      <div id="scenario-career" class="scenario" role="tabpanel" tabindex="0" aria-labelledby="tab-career" hidden><p class="print-label">就活の自己分析</p><h3>経験を具体的に掘り下げられるか</h3><p class="scenario-example">固有名詞を伏せた経験を伝え、自分の行動や工夫を質問してもらう。</p><p class="scenario-check">判断の目安　自分の経験に照らして納得できる</p></div>
+      <div id="scenario-drive" class="scenario" role="tabpanel" tabindex="0" aria-labelledby="tab-drive" hidden><p class="print-label">Driveの資料整理</p><h3>資料を置いている場所とつながるか</h3><p class="scenario-example">GeminiでDrive連携を確認。添付できる資料なら他のAIへのファイル添付も候補。</p><p class="scenario-check">判断の目安　アカウントの権限と参照した原文を確認できる</p></div>
+      <div id="scenario-event" class="scenario" role="tabpanel" tabindex="0" aria-labelledby="tab-event" hidden><p class="print-label">イベント企画</p><h3>企画の前提を問い直せるか</h3><p class="scenario-example">AIと企画案を練り、別のAIに同じ案を渡して見落としを探す。</p><p class="scenario-check">判断の目安　対象者・予算・当日の運営を具体化できる</p></div>
+      <div id="scenario-web" class="scenario" role="tabpanel" tabindex="0" aria-labelledby="tab-web" hidden><p class="print-label">サイト・アプリ制作</p><h3>試作し、手元で動作を確認できるか</h3><p class="scenario-example">ClaudeのArtifactsやGeminiのCanvasで、イベント案内ページを試作する。</p><p class="scenario-check">判断の目安　スマホ表示やボタンの動きまで確認できる</p></div>
+    </div>
+  </div>
+  <p class="slide-note">迷ったら同じ依頼を2つに出し、直しやすさを比較。案を作るAIと点検するAIを分ける使い方もできます。</p>
+</section>
+
+<section class="slide" id="slide-12" hidden aria-labelledby="title-12" data-section="無料・有料の判断">
+  <header class="slide-head"><p class="kicker">無料版と有料版</p><h2 id="title-12"><span class="phrase">無料版で試して、</span><wbr><span class="phrase">困った点から判断する</span></h2></header>
+  <div class="plan-layout">
+    <div class="decision">
+      <div><span>01</span><div><h3>まず無料版で試す</h3><p>実際の課題や作業をいくつか任せ、使い心地を見る。</p></div></div>
+      <div><span>02</span><div><h3>止まった理由を確かめる</h3><p>上限に達したのか、必要な機能がなかったのか。</p></div></div>
+      <div><span>03</span><div><h3>有料版で解消するかを見る</h3><p>頻度・費用と、追加で得られる価値を比べる。</p></div></div>
+    </div>
+    <aside class="plan-check"><h3>公式ページで確認すること</h3><ul><li>選べるモデル</li><li>メッセージ・ツールの利用上限</li><li>ファイルや高度な機能の利用条件</li><li>長い作業で使える容量・機能</li><li>使う端末や普段のツールとの連携</li></ul></aside>
+  </div>
+  <p class="slide-note">有料版にも上限があります。<a href="https://chatgpt.com/pricing/">ChatGPT</a> ／ <a href="https://gemini.google/jp/subscriptions/?hl=ja">Gemini・Google AI</a> ／ <a href="https://claude.com/pricing">Claude</a> · 2026年11月26日確認</p>
+</section>
+
+<section class="slide simulator-slide" id="slide-13" hidden aria-labelledby="title-13" data-section="無料・有料の判断">
+  <header class="slide-head"><p class="kicker">費用対効果を試算</p><h2 id="title-13">課金の価値を見積もる</h2></header>
+  <div class="simulator">
+    <div class="sim-inputs">
+      <div class="range-row"><label for="monthly-cost">月額料金</label><output id="cost-label" for="monthly-cost">3,000 円</output><input id="monthly-cost" type="range" min="0" max="40000" step="100" value="3000" aria-valuetext="3,000円"></div>
+      <div class="range-row"><label for="days-used">月間利用日数</label><output id="days-label" for="days-used">20 日</output><input id="days-used" type="range" min="0" max="31" step="1" value="20" aria-valuetext="20日"></div>
+      <div class="range-row"><label for="minutes-saved">無料版と比べた追加短縮時間／日</label><output id="minutes-label" for="minutes-saved">30 分</output><input id="minutes-saved" type="range" min="0" max="180" step="1" value="30" aria-valuetext="30分"></div>
+    </div>
+    <div class="sim-results" role="status" aria-live="polite" aria-atomic="true">
+      <div><p>1か月あたりの追加短縮時間</p><p class="metric"><span id="saved-result">10</span><span id="saved-unit" class="unit">時間</span></p></div>
+      <div><p>短縮時間 1時間あたりの費用</p><p class="metric"><span id="hourly-result">300</span><span id="hourly-unit" class="unit">円</span></p></div>
+    </div>
+  </div>
+  <p class="sim-qualitative">時間以外にも、成果物の質・理解の深さ・新しくできることを比べる。</p>
+  <p class="slide-note">数値は説明用の仮定です。実際のサービス料金・時短効果を示すものではありません。</p>
+</section>
+
+<section class="slide" id="slide-14" hidden aria-labelledby="title-14" data-section="継続利用と自己理解">
+  <header class="slide-head"><p class="kicker">継続して使う価値</p><h2 id="title-14"><span class="phrase">対話を重ねると、</span><wbr><span class="phrase">前のやり取りを生かせる</span></h2></header>
+  <div class="continuity">
+    <div class="continuity-row single-use"><h3>その場で使う</h3><ol><li>背景を説明する</li><li>答えを得る</li><li>その場で完結</li></ol></div>
+    <div class="continuity-row ongoing-use"><h3>継続して使う</h3><ol><li>背景や目的を伝える</li><li>試して、気づきを残す</li><li>前回を踏まえて考える</li></ol></div>
+  </div>
+  <div class="continuity-values">
+    <div><h3>パーソナライズ</h3><p>自分の目的に沿った例や説明を得やすい</p></div>
+    <div><h3>AI活用スキル</h3><p>質問・検証・直し方のコツが身につく</p></div>
+    <div><h3>振り返り</h3><p>考えや経験を見返し、変化に気づける</p></div>
+  </div>
+  <p class="slide-note">履歴やメモリの参照はサービス・設定次第です。個別化は、既存のモデルが会話や保存済みのメモを参照して応答するしくみです。</p>
+</section>
+
+<section class="slide closing" id="slide-15" hidden aria-labelledby="title-15" data-section="継続利用と自己理解">
+  <header class="slide-head"><p class="kicker">前半のまとめ</p><h2 id="title-15">AIは、一緒に考える<br>パートナーにもなる。</h2></header>
+  <ol class="closing-takeaways"><li><span>01</span>目的からAIを選ぶ</li><li><span>02</span>無料で試して必要な機能を知る</li><li><span>03</span>対話を重ね、自分の使い方を見つける</li></ol>
+  <div class="closing-next"><div><p>後半の体験へ</p><h3><span class="phrase">では、実際にAIに</span><wbr><span class="phrase">自分のことを</span><wbr><span class="phrase">聞いてみましょう。</span></h3></div><svg aria-hidden="true"><use href="#i-arrow"/></svg></div>
+  <p class="slide-note">AIが返す性格分析は自己理解のきっかけとして扱い、経験に照らして考えましょう。医学的・心理学的な診断には使えません。</p>
+</section>
+
+    </div>
   </main>
+  <nav class="toolbar" aria-label="スライド操作">
+    <span class="toolbar-brand">Local Bridge デジタル勉強会</span>
+    <div class="toolbar-pages">
+      <button id="previous" type="button" aria-label="前のスライド" title="前のスライド（←）"><svg aria-hidden="true" class="icon"><use href="#i-prev"/></svg></button>
+      <output id="page-count" class="page-count" aria-label="ページ番号" aria-live="off">1 / 15</output>
+      <button id="next" type="button" aria-label="次のスライド" title="次のスライド（→・Space）"><svg aria-hidden="true" class="icon"><use href="#i-next"/></svg></button>
+    </div>
+    <div class="toolbar-options">
+      <button id="open-index" type="button" aria-label="スライド一覧" aria-haspopup="dialog" title="スライド一覧"><svg aria-hidden="true" class="icon"><use href="#i-menu"/></svg><span class="button-text">一覧</span></button>
+      <button id="toggle-layout" type="button"><svg aria-hidden="true" class="icon"><use href="#i-read"/></svg><span class="button-text">読みやすく表示</span></button>
+      <button id="fullscreen" type="button" aria-label="全画面表示" title="全画面表示（F）"><svg aria-hidden="true" class="icon"><use href="#i-full"/></svg><span class="button-text">全画面</span></button>
+    </div>
+  </nav>
+</div>
+<dialog id="index-dialog" class="index-dialog" aria-labelledby="index-title">
+  <header class="index-head"><h2 id="index-title">スライド一覧</h2><button type="button" id="close-index" class="index-close" aria-label="一覧を閉じる"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></header>
+  <ol id="index-list" class="index-list"></ol>
+</dialog>
+<p id="status-message" class="status-message" role="status" hidden></p>
+<p id="announcement" class="visually-hidden" role="status" aria-live="polite"></p>
+
+<script src="./script.js"></script>
 </body>
 </html>
